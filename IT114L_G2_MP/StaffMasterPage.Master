@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="StaffMasterPage.master.cs" Inherits="IT114L_G2_MP.StaffMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Light Sync Audio</title>
+    <link href="Css/mastercss.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header class="navbar">
+            <asp:HyperLink ID="logolink" runat="server"> <asp:Image ID="smallLogo" runat="server" CssClass="hyperlink" ImageUrl="~/img/smallLogo.svg" /></asp:HyperLink>
+
+            <nav> 
+                <ul class="navbar-items">
+                    <li class="nav-list"><asp:HyperLink ID="employees" runat="server" CssClass="hyperlink" NavigateUrl="~/Employee-Management.aspx"><asp:Image ID="Image1" runat="server" ImageUrl="~/navIcons/account.png" CssClass="nav-icon" /><br /><span class="nav-text">My Employees</span></asp:HyperLink></li>
+                    <li class="nav-list"><asp:HyperLink ID="clients" runat="server" CssClass="hyperlink" NavigateUrl="~/Client-Management.aspx"><asp:Image ID="Image3" runat="server" ImageUrl="~/navIcons/client.png" CssClass="nav-icon" /><br /><span class="nav-text">My Clients</span></asp:HyperLink></li>
+                    <li class="nav-list"><asp:HyperLink ID="HyperLink1" runat="server" CssClass="hyperlink" NavigateUrl="~/Create-Package.aspx"><asp:Image ID="Image7" runat="server" ImageUrl="~/navIcons/package-box.png" CssClass="nav-icon" /><br /><span class="nav-text">My Packages</span></asp:HyperLink></li>
+                    <li class="nav-list"><asp:HyperLink ID="event" runat="server" CssClass="hyperlink" NavigateUrl="~/Event-Management.aspx"><asp:Image ID="Image5" runat="server" ImageUrl="~/navIcons/event.png" CssClass="nav-icon" /><br /><span class="nav-text">My Events</span></asp:HyperLink></li>
+                    <li class="nav-list"><asp:HyperLink ID="HyperLink3" runat="server" CssClass="hyperlink" NavigateUrl="~/Payments.aspx"><asp:Image ID="Image6" runat="server" ImageUrl="~/navIcons/equipment.png" CssClass="nav-icon" /><br /><span class="nav-text">Payments</span></asp:HyperLink></li>
+                    <li class="nav-list"><asp:HyperLink ID="equipments" runat="server" CssClass="hyperlink" NavigateUrl="~/Equipment-Management.aspx"><asp:Image ID="Image4" runat="server" ImageUrl="~/navIcons/payment.png" CssClass="nav-icon" /><br /><span class="nav-text">My Equipments</span></asp:HyperLink></li>
+                    <li class="nav-list"><asp:HyperLink ID="HyperLink2" runat="server" CssClass="hyperlink" NavigateUrl="~/Team-Management.aspx"><asp:Image ID="Image2" runat="server" ImageUrl="~/navIcons/team.png" CssClass="nav-icon" /><br /><span class="nav-text">My Teams</span></asp:HyperLink></li>
+                </ul>
+            </nav>
+            <asp:Button ID="logOut" runat="server" Text="Log Out" CssClass="BookBtn" OnClick="btnLogout_click"/>
+        </header>
+
+    
+            <div> 
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+    
+
+    </form>
+</body>
+</html>

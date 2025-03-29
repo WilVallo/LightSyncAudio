@@ -1,0 +1,411 @@
+﻿/* Main Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url("https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Page Layout */
+.page {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Create Package Container */
+.create-package-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 992px) {
+    .create-package-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Left Container */
+.left-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Package Information */
+.package-information {
+    background-color: rgba(30, 30, 30, 0.7);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .package-information:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    }
+
+    .package-information h2 {
+        margin: 0 0 20px 0;
+        font-weight: 600;
+        color: #ffffff;
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        position: relative;
+        padding-bottom: 10px;
+    }
+
+        .package-information h2:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, #b02b2d 0%, rgba(176, 43, 45, 0.5) 100%);
+        }
+
+/* Select Package Container */
+.select-package-container {
+    background-color: rgba(30, 30, 30, 0.7);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .select-package-container:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    }
+
+    .select-package-container h2 {
+        margin: 0 0 20px 0;
+        font-weight: 600;
+        color: #ffffff;
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        position: relative;
+        padding-bottom: 10px;
+    }
+
+        .select-package-container h2:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, #b02b2d 0%, rgba(176, 43, 45, 0.5) 100%);
+        }
+
+/* Select Package GridView */
+.select-package_gridview {
+    background-color: rgba(30, 30, 30, 0.7);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .select-package_gridview:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    }
+
+    .select-package_gridview h2 {
+        margin: 0 0 20px 0;
+        font-weight: 600;
+        color: #ffffff;
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        position: relative;
+        padding-bottom: 10px;
+    }
+
+        .select-package_gridview h2:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, #b02b2d 0%, rgba(176, 43, 45, 0.5) 100%);
+        }
+
+/* View Package Items Container */
+.view-package-items-container {
+    background-color: rgba(30, 30, 30, 0.7);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: fit-content;
+}
+
+    .view-package-items-container:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    }
+
+    .view-package-items-container h2 {
+        margin: 0 0 20px 0;
+        font-weight: 600;
+        color: #ffffff;
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        position: relative;
+        padding-bottom: 10px;
+    }
+
+        .view-package-items-container h2:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, #b02b2d 0%, rgba(176, 43, 45, 0.5) 100%);
+        }
+
+/* Form Elements */
+.textbox {
+    font-family: "Poppins", sans-serif;
+    height: 45px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+    background-color: rgba(30, 30, 30, 0.8);
+    color: #ffffff;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+    .textbox:focus {
+        border-color: #b02b2d;
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(176, 43, 45, 0.2), inset 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-color: rgba(40, 40, 40, 0.9);
+    }
+
+.ddl {
+    font-family: "Poppins", sans-serif;
+    height: 45px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+    background-color: rgba(30, 30, 30, 0.8);
+    color: #ffffff;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23B02B2D' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+    .ddl:focus {
+        border-color: #b02b2d;
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(176, 43, 45, 0.2), inset 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-color: rgba(40, 40, 40, 0.9);
+    }
+
+/* Buttons */
+.button,
+#createNew {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 12px 30px;
+    margin-bottom: 15px;
+    background: linear-gradient(135deg, #b02b2d, #8c1d1f);
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(176, 43, 45, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    min-width: 120px;
+    text-align: center;
+}
+
+    .button:hover,
+    #createNew:hover {
+        background: linear-gradient(135deg, #8c1d1f, #b02b2d);
+        box-shadow: 0 8px 20px rgba(176, 43, 45, 0.4);
+        transform: translateY(-2px);
+    }
+
+    .button:active,
+    #createNew:active {
+        transform: translateY(0);
+        box-shadow: 0 3px 10px rgba(176, 43, 45, 0.4);
+    }
+
+/* Button Container */
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* GridView Styling */
+.gridview {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: rgba(40, 40, 40, 0.5);
+    border-radius: 8px;
+    overflow: hidden;
+    border: none;
+}
+
+    .gridview th {
+        background-color: rgba(50, 50, 50, 0.8);
+        color: #ffffff;
+        padding: 12px 15px;
+        text-align: left;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 1px;
+        border: none;
+    }
+
+    .gridview td {
+        padding: 12px 15px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        color: #e0e0e0;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+    }
+
+    .gridview tr:last-child td {
+        border-bottom: none;
+    }
+
+    .gridview tr:hover td {
+        background-color: rgba(60, 60, 60, 0.5);
+    }
+
+    /* GridView Links */
+    .gridview a {
+        color: #b02b2d;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        font-weight: 500;
+    }
+
+        .gridview a:hover {
+            color: #ff4d4d;
+            text-decoration: underline;
+        }
+
+/* Delete Button */
+.delete-button {
+    color: #ff4d4d;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+    .delete-button:hover {
+        color: #ff6666;
+        text-decoration: underline;
+    }
+
+/* Empty State */
+.gridview:empty {
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .gridview:empty:after {
+        content: "No items added yet";
+        color: rgba(255, 255, 255, 0.5);
+        font-style: italic;
+    }
+
+/* Override ASP.NET GridView Default Styles */
+.gridview,
+.gridview td,
+.gridview th {
+    border-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+    .gridview th {
+        background-color: rgba(50, 50, 50, 0.8) !important;
+        color: #ffffff !important;
+    }
+
+    .gridview tr.gridview-alternating-row {
+        background-color: rgba(45, 45, 45, 0.5) !important;
+    }
+
+    .gridview tr:hover {
+        background-color: rgba(60, 60, 60, 0.5) !important;
+    }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .page {
+        padding: 10px;
+    }
+
+    .button,
+    #createNew {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    .gridview th,
+    .gridview td {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+}

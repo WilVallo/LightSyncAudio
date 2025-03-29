@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CustomerMasterPage.master.cs" Inherits="IT114L_G2_MP.CustomerMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/mastercss.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header class="navbar">
+
+            <asp:HyperLink ID="logolink" runat="server" NavigateUrl="~/Home.aspx"><asp:Image ID="smallLogo" runat="server" CssClass="hyperlink" ImageUrl="~/img/smallLogo.svg" /></asp:HyperLink>
+
+            <nav> 
+                <ul class="navbar-items">
+                    <li class="nav-list"><asp:HyperLink ID="home" runat="server" NavigateUrl="~/Home.aspx" CssClass="hyperlink">Home</asp:HyperLink></li>
+                    <li class="nav-list"><asp:HyperLink ID="about" runat="server" CssClass="hyperlink" NavigateUrl="~/About.aspx">About Us</asp:HyperLink></li>
+                    <li class="nav-list"><asp:HyperLink ID="services" runat="server" CssClass="hyperlink" NavigateUrl="~/Services.aspx">Services</asp:HyperLink></li>
+                    <li class="nav-list"><asp:HyperLink ID="booking" runat="server" CssClass="hyperlink" NavigateUrl="~/Booking.aspx">Book Now</asp:HyperLink></li>
+                    <li class="nav-list"><asp:HyperLink ID="payment" runat="server" CssClass="hyperlink" NavigateUrl="~/Payment-Management.aspx">My Payments</asp:HyperLink></li>
+                    <li class="nav-list"><asp:HyperLink ID="contact" runat="server" CssClass="hyperlink" NavigateUrl="~/Contact.aspx">Contact Us</asp:HyperLink></li>
+                </ul>
+            </nav>
+            <!-- <asp:Button ID="Button1" runat="server" Text="Book Now" CssClass="BookBtn" PostBackUrl="~/Booking.aspx" /> 
+                 -->
+            <asp:Button ID="NavLogOut" runat="server" Text="Logout" CssClass="BookBtn" OnClick="btnLogout_click" /> 
+        </header>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+    <footer class="footer">
+        <div class="container-fot">
+            <div class="row-fot">
+                <div class="footer-col">
+                    <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/Booking.aspx"><asp:Image ID="Image2" runat="server" CssClass="fot-logo" ImageUrl="~/img/smallLogo.svg" /></asp:HyperLink>
+
+                </div>
+                <div class="footer-col">
+                    <h3>office</h3>
+                    <p>Unit 203, ABC Business Center National Highway, Brgy. Balibago Santa Rosa, Laguna 4026 Philippines</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Link</h3>
+                    <ul class="fot-items">
+                        <li class="fot-list"><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Home.aspx" CssClass="fot-link">Home</asp:HyperLink></li>
+                        <li class="fot-list"><asp:HyperLink ID="HyperLink3" runat="server" CssClass="fot-link" NavigateUrl="~/About.aspx">About Us</asp:HyperLink></li>
+                        <li class="fot-list"><asp:HyperLink ID="HyperLink4" runat="server" CssClass="fot-link" NavigateUrl="~/Services.aspx">Services</asp:HyperLink></li>
+                        <li class="fot-list"><asp:HyperLink ID="HyperLink5" runat="server" CssClass="fot-link" NavigateUrl="~/Booking.aspx">My Booking</asp:HyperLink></li>
+                        <li class="fot-list"><asp:HyperLink ID="HyperLink6" runat="server" CssClass="fot-link" NavigateUrl="~/Contact.aspx">Contact Us</asp:HyperLink></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Connect with Us</h3>
+                    <div class="fot-col-inder-row">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-solid fa-phone"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <div class="copyright-row">
+         <p>© Copyright 2025 · www.lightsyncaudio.ph · all rights reserved</p>
+    </div>
+    </form>
+</body>
+</html>

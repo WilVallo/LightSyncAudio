@@ -1,0 +1,226 @@
+﻿body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    background-image: url("/img/Login-BG.png");
+}
+
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.log-in-container {
+    display: flex;
+    width: 900px; 
+    height: 600px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.left-container {
+    width: 60%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.banner-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    width: 350px; 
+    position: relative;
+    z-index: 2;
+}
+
+.right-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    padding: 40px;
+    text-align: left; 
+}
+
+    .right-container h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        color: #1a1a1a;
+        text-align: center;
+    }
+
+label {
+    font-size: 18px;
+    color: #5a5a5a;
+    font-weight: bold;
+    margin-top: 15px;
+    display: block;
+}
+
+a {
+    margin-top: 15px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #5A5A5A;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    font-size: 18px;
+    height: 45px;
+    padding: 10px 15px; 
+    width: 100%;
+    background: #12122d;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto; 
+}
+
+
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+    margin-top: 10px;
+}
+    .signup .btn {
+        justify-content: center;
+    }
+
+    .signup a {
+        text-decoration: none;
+        color: #12122d;
+        font-weight: bold;
+    }
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .log-in-container {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-container {
+        width: 100%;
+        height: 60px;
+    }
+
+    .banner-bg {
+        height: 100%;
+    }
+
+    .right-container {
+        width: 100%;
+        padding: 40px;
+    }
+    .logo {
+        width: 180px;
+    }
+
+    .input {
+        font-size: 16px;
+    }
+
+    .login{
+        padding: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .log-in-container {
+        width: 90%;
+        height: auto;
+    }
+
+    .right-container {
+        padding: 20px;
+    }
+
+        .right-container h1 {
+            font-size: 28px;
+        }
+
+    label {
+        font-size: 17px;
+    }
+
+    .input {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 16px;
+        height: 40px;
+    }
+
+    .logo {
+        width: 200px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .log-in-container {
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .left-container {
+        width: 100%;
+        height: 60px;
+    }
+
+    .right-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+        .right-container h1 {
+            font-size: 24px;
+        }
+
+    .input, .btn {
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    label{
+        font-size:14px;
+    }
+    .signup {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+

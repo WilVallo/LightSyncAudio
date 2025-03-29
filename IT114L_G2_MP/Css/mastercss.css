@@ -1,0 +1,195 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list, .hyperlink {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    gap: 5px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#smallLogo {
+    height: 50px;
+    padding-left: 40px;
+}
+
+.nav-icon {
+    height: 45px;
+    align-items: center;
+}
+
+.hyperlink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.nav-text {
+    margin-top: 0px;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #171616;
+    padding: 10px 20px;
+    height: 100px;
+}
+
+.navbar-items {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-list {
+    margin: 0 10px;
+    padding-top: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+    .nav-list .hyperlink {
+        display: inline-block;
+        padding: 10px 16px;
+        transition: all 0.2s ease;
+    }
+
+        .nav-list .hyperlink:hover {
+            opacity: 0.7;
+        }
+
+.BookBtn {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px 35px;
+    margin-top: 10px;
+    margin-right: 40px;
+    background: #B02B2D;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 8px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+    .BookBtn:hover {
+        background: #A51518;
+        box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.4);
+    }
+
+.footer {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    color: #FFFFFF;
+    text-decoration: none;
+    background: #171A35;
+    padding: 40px;
+}
+
+
+    .footer .fot-logo {
+        height: 45px;
+    }
+
+.container-fot {
+    margin: 30px 0px;
+}
+
+.row-fot {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 25%;
+}
+
+    .footer-col h3 {
+        padding-top: 12px;
+        font-size: 26px;
+    }
+
+    .footer-col p {
+        margin-right: 100px;
+        padding-top: 10px;
+    }
+
+    .footer-col ul a {
+        text-decoration: none;
+        color: #FFF
+    }
+
+
+
+.footer ul {
+    list-style: none;
+    padding-top: 10px;
+}
+
+.fot-link {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.copyright-row {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    color: #FFFFFF;
+    padding: 30px 40px;
+    background: #030724;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    text-align: center;
+}
+
+.fot-col-inder-row {
+    display: flex;
+    padding-top: 10px;
+}
+
+.fot-col-inder-row a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    outline: none;
+}
+
+.fot-col-inder-row a i {
+    font-size: 26px;
+}
+
+.fot-col-inder-row a :hover {
+    opacity: 0.7;
+}
+
+.fot-col-inder-row li :hover {
+    opacity: 0.7;
+}
+
+.footer .fot-items {
+    padding-left: 0 !important;
+}

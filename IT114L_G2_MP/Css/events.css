@@ -1,0 +1,461 @@
+﻿/* Main Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url("https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+:root {
+    --primary-color: #b02b2d;
+    --secondary-color: #8c1d1f;
+    --dark-color: #121212;
+    --dark-gray: #242424;
+    --medium-gray: #333333;
+    --light-gray: #d9d9d9;
+    --white: #ffffff;
+}
+
+/* Page Layout */
+.page {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Grid View Container */
+.gridviewcontainer {
+    background-color: rgba(30, 30, 30, 0.7);
+    border-radius: 15px;
+    padding: 0 0 20px 0;
+    margin: 20px auto 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    max-height: 500px;
+    max-width: 1200px;
+}
+
+    .gridviewcontainer:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    }
+/* Header Styling */
+.evt-container-line {
+    font-family: "Poppins", sans-serif;
+    border-bottom: none;
+    font-weight: 400;
+    font-size: 22px;
+    padding-top: 20px;
+    color: #ffffff;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+    .evt-container-line::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, #B02B2D 0%, rgba(176, 43, 45, 0.5) 50%, transparent 100%);
+    }
+
+
+/* Heading Container */
+.heading_container {
+    padding: 2px;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 10px;
+}
+
+    .heading_container h3 {
+        font-size: 24px;
+        font-weight: 600;
+        color: var(--white);
+        margin: 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 18px;
+    }
+
+/* Grid View */
+.gridview {
+    width: 95%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-family: "Poppins", sans-serif;
+    background-color: rgba(40, 40, 40, 0.5);
+    border-radius: 8px;
+    overflow: hidden;
+       
+
+}
+
+    .gridview th {
+        background-color: rgba(50, 50, 50, 0.8);
+        color: var(--white);
+        padding: 15px;
+        text-align: left;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 1px;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        border-bottom: 2px solid rgba(176, 43, 45, 0.5);
+    }
+
+    .gridview td {
+        padding: 12px 15px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        color: var(--light-gray);
+    }
+
+    .gridview tr:last-child td {
+        border-bottom: none;
+    }
+
+    .gridview tr:hover td {
+        background-color: rgba(60, 60, 60, 0.5);
+    }
+
+    /* GridView Links */
+    .gridview a {
+        color: var(--primary-color);
+        text-decoration: none;
+        transition: color 0.3s ease;
+        font-weight: 500;
+    }
+
+        .gridview a:hover {
+            color: #ff4d4d;
+            text-decoration: underline;
+        }
+
+/* No Events Label */
+#No_Events {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--light-gray);
+    padding: 30px 0;
+    font-style: italic;
+}
+
+/* Event Details */
+.event_details {
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Container */
+.container {
+    background-color: rgba(30, 30, 30, 0.7);
+    border-radius: 15px;
+    padding: 0 0 20px 0;
+    margin: 20px auto 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    max-width: 1200px;
+}
+
+    .container:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    }
+
+    .container h4 {
+        font-size: 22px;
+        font-weight: 600;
+        color: var(--white);
+        margin: 20px 0 10px;
+        text-align: center;
+        position: relative;
+        padding-bottom: 10px;
+    }
+
+        .container h4:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 2px;
+            background: var(--primary-color);
+        }
+
+/* Horizontal Rule */
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(176, 43, 45, 0.5), transparent);
+    margin: 15px 0 25px;
+}
+
+/* Content Layout */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5%;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.left,
+.right {
+    flex: 1;
+    min-width: 300px;
+}
+
+.content3 {
+    padding: 20px 5%;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: var(--light-gray);
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background-color: rgba(40, 40, 40, 0.3);
+    border-radius: 10px;
+    margin: 0 5% 20px;
+}
+
+/* Form Elements */
+.prompt {
+    margin-bottom: 25px;
+    font-size: 16px;
+    color: var(--light-gray);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+input[type="number"],
+input[type="date"],
+.textprompt {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    padding: 12px 15px;
+    height: auto;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    background-color: rgba(30, 30, 30, 0.8);
+    color: var(--white);
+    transition: all 0.3s ease;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="phone"]:focus,
+    input[type="number"]:focus,
+    input[type="date"]:focus,
+    .textprompt:focus {
+        border-color: var(--primary-color);
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(176, 43, 45, 0.2), inset 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-color: rgba(40, 40, 40, 0.9);
+    }
+
+/* Dropdown */
+.team {
+    font-family: "Poppins", sans-serif;
+    height: 45px;
+    width: 90%;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 0 15px;
+    background-color: rgba(30, 30, 30, 0.8);
+    color: var(--white);
+    transition: all 0.3s ease;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23B02B2D' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+}
+    .team:focus{
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(176, 43, 45, 0.2), inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgba(40, 40, 40, 0.9);
+}
+
+
+.ddl {
+    font-family: "Poppins", sans-serif;
+    height: 45px;
+    width: 250px;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 0 15px;
+    margin-left: 15px;
+    background-color: rgba(30, 30, 30, 0.8);
+    color: var(--white);
+    transition: all 0.3s ease;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23B02B2D' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+    padding-right: 30px;
+}
+
+    .ddl:focus {
+        border-color: var(--primary-color);
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(176, 43, 45, 0.2), inset 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-color: rgba(40, 40, 40, 0.9);
+    }
+
+/* Button Container */
+.button-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Buttons */
+.button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 12px 30px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    min-width: 150px;
+    margin: 0 10px;
+    width: auto !important;
+    height: auto !important;
+    background-image: none;
+}
+
+    .button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .button:active {
+        transform: translateY(0);
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+    }
+
+/* Save Button */
+#save_btn {
+    background: linear-gradient(135deg, #2ecc71, #27ae60) !important;
+}
+
+    #save_btn:hover {
+        background: linear-gradient(135deg, #27ae60, #2ecc71) !important;
+    }
+
+/* Delete Button */
+#delete_btn {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) !important;
+}
+
+    #delete_btn:hover {
+        background: linear-gradient(135deg, var(--secondary-color), var(--primary-color)) !important;
+    }
+
+/* Status Indicators */
+.status-indicator {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.status-approved {
+    background-color: #2ecc71;
+}
+
+.status-pending {
+    background-color: #f39c12;
+}
+
+.status-disapproved {
+    background-color: var(--primary-color);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .gridviewcontainer,
+    .event_details {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 992px) {
+    .content {
+        padding: 0 3%;
+        gap: 20px;
+    }
+
+    .content3 {
+        padding: 20px 3%;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 3% 20px;
+    }
+
+    .ddl {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .left,
+    .right {
+        flex: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .gridview {
+        width: 95%;
+    }
+
+    .content3 {
+        font-size: 16px;
+    }
+
+    .container h4 {
+        font-size: 20px;
+    }
+}
